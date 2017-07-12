@@ -7,3 +7,8 @@ services:
       - KEYCLOAK_PASSWORD=admin
     ports:
      - "8900:8080"
+  py_app:
+    build: ./py_app
+    image: py_app:latest
+    ports:
+      - "5000:5000"
